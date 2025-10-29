@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Online Navideña</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/styles_navidad.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</head>
+<body>
+    <p id="titulo">Bienvenido a nuestra Tienda de Productos Navideños</p>
+        <header>
+          <div class="navbar nav-top">
+              <img src="../images/logo_tienda.png" alt="Logo" id="logo" width="120" height="120">
+              <form class="d-flex barra_busqueda" role="search">
+                <input class="form-control me-2" type="search" placeholder="Busca tu producto navideño" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                  </svg>
+                </button>
+              </form>
+              <span class="iconos">
+                <span>
+                  <button type="button" class="btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+                  </svg>
+                  <p>Lista de deseos</p>
+                  </button>
+                </span>
+                <span> 
+                <button type="button" class="btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                  </svg>
+                  <p>Mi cuenta</p>
+                </button>
+                </span>
+                
+                <span>
+                <button type="button" class="btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-cart-dash" viewBox="0 0 16 16">
+                    <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1z"/>
+                    <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+                  </svg>
+                  <p>Mi Carrito</p>  
+                </button>
+                </span>
+              </span>
+              <img src="../images/gorro_nav.webp" alt="" id="gorro" width="100" height="100">
+          </div>
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" href="../index.html">INICIO</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../paginas/arbol.html">ARBOL</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../paginas/luces.html">LUCES</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../paginas/figuras.html">FIGURAS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../paginas/decoraciones.html">DECORACIONES</a>
+                </li>
+                 <!--
+                 <li class="nav-item">
+                  <a class="nav-link" href="../paginas/decoraciones_exterior.html">DECORACIONES EXTERIOR</a>
+                </li>-->
+                <li class="nav-item">
+                  <a class="nav-link" href="../paginas/decoraciones_mesa.html">DECORACIONES MESA</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../paginas/pesebre.html">PESEBRE</a>
+                </li>
+                
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    MAS
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">⭐ Opciones</a></li>
+                  <li><a class="dropdown-item" href="#">🛷 Carrito</a></li>
+                  <li><a class="dropdown-item" href="#">⚙️ Configuracion</a></li>
+                </ul>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+      
+        <div class="conteiner">
+            <div class="a1">
+                <div class="card" style="width: 18rem;">
+                  <img src="../images/sale1.png" class="card-img-top" alt="...">
+                </div>
+                <div class="card" style="width: 18rem;">
+                  <img src="../images/sale2.png" class="card-img-top" alt="...">
+                </div>
+                <div class="card" style="width: 18rem;">
+                  <img src="../images/sale3.png" class="card-img-top" alt="...">
+                </div>
+                <div class="card" style="width: 18rem;">
+                  <video autoplay loop >
+                    <source src="../images/video1.mp4" type="video/mp4">
+                  </video>
+                </div>
+            </div>
+            <div class="a2">
+                <div class="c1">Arboles Navideños Novedades</div>
+                <div class="card c2">
+                  <img src="../images/arbol1.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Árbol de Navidad 1</h5>
+                    <p class="card-text">Árbol de Navidad artificial de 10 pies, árbol de Navidad muyopeado flocado con nieve con puntas de rama 2084, 900 luces incandescentes</p>
+                    <a href="#" class="btn btn-primary">3900 Bs con 30% de descuento</a>
+                  </div>
+                </div>
+                <div class="card c3">
+                  <img src="../images/arbol2.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Árbol de Navidad 2</h5>
+                    <p class="card-text">Árbol de Navidad Artificial con cuello torcido, árbol de Navidad de PVC, Material de decoración de ambiente para el hogar, árbol de Navidad creativo con forma de sombrero de Papá Noel</p>
+                    <a href="#" class="btn btn-primary">2200 Bs con 20% de descuento</a>
+                  </div>
+                </div>
+                <div class="card c4" >
+                  <img src="../images/arbol3.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Árbol de Navidad 3</h5>
+                    <p class="card-text">Árbol de Navidad nórdico de 45/60cm, adorno de árbol con copos de nieve, exquisito árbol luminoso flocado, accesorios de decoración para fiesta de año nuevo</p>
+                    <a href="#" class="btn btn-primary">1800 Bs con 30% de descuento</a>
+                  </div>
+                </div>
+                <div class="card c5" >
+                  <img src="../images/arbol4.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Árbol de Navidad 4</h5>
+                    <p class="card-text">Árbol de Navidad en flor de cerezo rosa, decoración de lujo Crypto, regalo de Navidad, 1,2/1,5 m/1,8 m/2,1 m</p>
+                    <a href="#" class="btn btn-primary">2500 Bs con 50% de descuento</a>
+                  </div>
+                </div>
+                <div class="c7">ARBOLES NAVIDEÑOS DECORADOS</div>
+                <div class="c8">ARBOL DECORADO 1</div>
+                <div class="c9">ARBOL DECORADO 2</div>
+                <div class="c10">ARBOL DECORADO 3</div>
+                <div class="c11">ARBOL DECORADO 4</div>
+                <div class="c12">ARBOL DECORADO 5</div>
+                <div class="c13">ARBOL DECORADO 6</div>
+                <div class="c14">ARBOL DECORADO 7</div>
+                <div class="c15">ARBOLES VERDES</div>
+                <div class="c16">ARBOL 1</div>
+                <div class="c17">ARBOL 2</div>
+                <div class="c18">ARBOL 3</div>
+                <div class="c19">ARBOL 4</div>
+                <div class="c20">ARBOL 5</div>
+                <div class="c21">ARBOL 6</div>
+                <div class="c22">ARBOL 7</div>
+                <div class="c23">ARBOL 8</div>
+            </div>
+        </div>
+        <footer>
+          <div class="container">
+              <div class="footer-content">
+                  <div class="footer-section1">
+                    <img src="../images/logo_tienda.png" alt="Logo" id="logo" width="120" height="120">
+                    <h4>Navi_dev</h4>
+                  </div>
+                  <div class="footer-section">
+                      <h4>Categorías</h4>
+                      <ul>
+                          <li><a href="#decoraciones">Decoraciones de Árbol</a></li>
+                          <li><a href="#luces">Luces Navideñas</a></li>
+                          <li><a href="#figuras">Figuras Navideñas</a></li>
+                          <li><a href="#coronas">Coronas y Guirnaldas</a></li>
+                      </ul>
+                  </div>
+                  <div class="footer-section">
+                      <h4>Atención al Cliente</h4>
+                      <ul>
+                          <li><a href="#contacto">Contacto</a></li>
+                          <li><a href="#envios">Información de Envíos</a></li>
+                          <li><a href="#devoluciones">Devoluciones</a></li>
+                          <li><a href="#faq">Preguntas Frecuentes</a></li>
+                      </ul>
+                  </div>
+                  <div class="footer-section">
+                      <h4>Síguenos</h4>
+                      <ul>
+                          <li><a href="#">📘 Facebook</a></li>
+                          <li><a href="#">📷 Instagram</a></li>
+                          <li><a href="#">🐦 Twitter</a></li>
+                          <li><a href="#">📺 YouTube</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="footer-bottom">
+                  <p>&copy; 2025 Navidad Mágica. Todos los derechos reservados. | Política de Privacidad | Términos y Condiciones</p>
+              </div>
+          </div>
+      </footer>
+    </div>
+</body>
+<style type="text/css">
+.container{
+  display: grid;
+}
+.desc{
+    margin-bottom: 10px;
+    border: 10px solid blue;
+    background-color: lightblue;
+    
+}
+.carrousel_auxi{
+    background-color: orange;
+    height: 200px;
+    margin-bottom: 10px;
+    
+}
+/*
+div{
+    border: 1px solid black;
+    padding: 3px;
+    text-align: center;
+}*/
+div{
+    padding: 3px;
+    text-align: center;
+}
+.conteiner{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 2px;  
+}
+.a1{
+    display: flex;
+    flex-direction: column;
+
+}
+.a2{
+    display: grid;
+    grid-gap: 5px;
+    /*grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;*/
+    grid-template-areas: "c1 c1 c1 c1" 
+                         "c2 c3 c4 c5"
+                         "c7 c7 c7 c7"
+                         "c8 c9 c9 c10"
+                         "c11 c12 c13 c14"
+                         "c15 c15 c15 c15"
+                         "c16 c17 c18 c19"
+                         "c20 c21 c22 c23"
+    ;
+    
+}
+.c1{
+    grid-area: c1;
+    background-color: red;
+    color: white;
+    font-size: 40px;
+}
+.c2{
+    grid-area: c2;
+    background-color: lightgreen;
+}
+.c3{
+    grid-area: c3;
+    background-color: lightgreen;
+}
+.c4{
+    grid-area: c4;
+    background-color: lightgreen;
+}
+.c5{
+    grid-area: c5;
+    background-color: lightgreen;
+}
+.c6{
+    grid-area: c6;
+}
+.c7{
+    grid-area: c7;
+    background-color: red;
+    color: white;
+    font-size: 40px;
+}
+.c8{
+    grid-area: c8;
+    border: 10px solid blue;
+    background-color: lightblue;
+    
+}
+.c9{
+    grid-area: c9;
+    border: 10px solid blue;
+    background-color: lightblue;
+    
+}
+.c10{
+    grid-area: c10;
+    border: 10px solid blue;
+    background-color: lightblue;
+    
+}
+.c11{
+    grid-area: c11;
+    background-color: yellow;
+    border: 10px solid orange;
+}
+.c12{
+    grid-area: c12;
+    background-color: yellow;
+    border: 10px solid orange;
+}
+.c13{
+    grid-area: c13;
+    background-color: yellow;
+    border: 10px solid orange;
+}
+.c14{
+    grid-area: c14;
+    background-color: yellow;
+    border: 10px solid orange;
+}
+.c15{
+    grid-area: c15;
+    background-color: red;
+    color: white;
+    font-size: 40px;
+}
+.c16{
+    grid-area: c16;
+}
+.c17{
+    grid-area: c17;
+}
+.c18{
+    grid-area: c18;
+}
+.c19{
+    grid-area: c19;
+}
+.c20{
+    grid-area: c20;
+}
+.c21{
+    grid-area: c21;
+}
+.c22{
+    grid-area: c22;
+}
+.c23{
+    grid-area: c23;
+}
+.item{
+    
+    background-color: cornflowerblue;
+    justify-self: flex-start;
+}
+.item1{
+    background-color: cadetblue;
+    justify-self: flex-end;
+}
+.footer{
+    display:grid;
+    grid-template-columns: 2fr 5fr 2fr;
+    background-color: violet;
+    height: auto;  
+}
+.footer-section1{
+  margin: auto;
+}
+</style>
+</html>

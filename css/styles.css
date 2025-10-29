@@ -1,0 +1,512 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    overflow: hidden;
+    margin: auto;
+}
+header .navbar .nav-link:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+header .navbar .barra_busqueda .btn{
+    background-color: white;
+}
+header .navbar .btn:hover{
+    background-color: rgba(255, 255, 0, 0.774);
+    border-radius: 10px;
+    transition: 0.3s;
+    color: black;
+}
+header .navbar #gorro{
+  overflow: hidden;
+  border-radius: 20%;
+  margin-right: 20px;
+}
+main .carousel-inner .carousel-caption .action-header{
+  display: inline-block;
+  margin: auto;
+  color: white;
+  text-decoration: none;
+  border: 1px solid #15a4fa;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: rgb(25, 25, 205);
+}
+main .carousel-inner .carousel-caption .action-header:hover{
+  background-color: #4478bc;
+  color: white;
+  transition: 0.3s;
+  text-decoration: none;
+}
+main .conteiner .a2 .aa1{
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+}
+main .conteinter .a2 .bb img{
+  height: 210px;
+  width: 100%;
+  border-radius: 5px;
+}
+main .conteiner .a2 .bb img:hover{
+  opacity: .6;
+  cursor: pointer;
+}
+footer .footer-section .modal-body{
+  height: 500px;
+  background-position: center;
+  padding: 60px 0;
+}
+footer .footer-section .modal-body form{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 70%;
+}
+footer .footer-section .modal-body input[type="text"], footer .footer-section .modal-body input[type="email"], footer .footer-section .modal-body textarea{
+  width: 100%;
+  margin: 5px 0;
+  padding: 15px 20px;
+  background: none;
+  border-radius: 5px;
+  color: rgba(204, 204, 204);
+  border: 2px solid rgba(204, 204, 204, 0.383);
+  font-family: 'Lato';
+  font-weight: 300;
+}
+footer .footer-section .modal-body textarea{
+  height: 150px;
+  max-height: 150px;
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 150px;
+}
+.derecha{
+  display: flex;
+  justify-content: space-around;
+}
+footer .footer-section .derecha .axs{
+  background-color: rgb(25, 25, 205);
+  color: white;
+  border-radius: 10px;
+  display: block;
+  width: 100px;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+footer .footer-section .modal-body input[type="submit"]{
+ display: block;
+ width: 100px;
+ margin: 10px 0;
+ padding: 10px;
+ background-color: rgb(25, 25, 205);
+ color: white;
+ border: none;
+ border-radius: 10px;
+ font-size: 18px;
+ font-weight: bold;
+ cursor: pointer;
+}
+footer .footer-section .modal-body input[type="submit"]:hover{
+  background-color: #4478bc;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 760px){
+  header .menu{
+    justify-content: center;
+  }
+  header .navbar #gorro{
+    display: none;
+  }
+  header .contenido-header .texto-header{
+    font-size: 18px;
+  }
+}
+/* === RESPONSIVE DESIGN PARA CARDS === */
+
+/* Contenedor principal de las cards */
+main .conteiner .a2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Cards base - siempre mantienen su tamaño completo */
+main .conteiner .a2 .card {
+  width: 100%;
+  margin: 0;
+  transition: transform 0.3s ease;
+}
+
+main .conteiner .a2 .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+
+/* Pantallas grandes: 4 cards por fila */
+@media screen and (min-width: 1200px) {
+  main .conteiner .a2 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Pantallas medianas: 3 cards por fila */
+@media screen and (max-width: 1199px) and (min-width: 900px) {
+  main .conteiner .a2 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Tablets: 2 cards por fila */
+@media screen and (max-width: 899px) and (min-width: 600px) {
+  main .conteiner .a2 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }  
+  main .conteiner .a2 .card .card-body .card-title {
+    font-size: 20px;
+  }
+  
+  main .conteiner .a2 .card .card-body .card-text {
+    font-size: 16px;
+  }
+}
+
+/* Móviles grandes: 1 card por fila */
+@media screen and (max-width: 599px) {
+  main .conteiner .a2 {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 15px;
+  }
+  
+  main .conteiner .a2 .card {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  main .conteiner .a2 .card .card-body .card-title {
+    font-size: 24px;
+  }
+  
+  main .conteiner .a2 .card .card-body .card-text {
+    font-size: 18px;
+  }
+}
+
+/* Móviles pequeños: 1 card por fila optimizada */
+@media screen and (max-width: 400px) {
+  main .conteiner .a2 {
+    padding: 10px;
+    gap: 15px;
+  }
+  
+  main .conteiner .a2 .card {
+    max-width: 100%;
+  }
+  
+  main .conteiner .a2 .card .card-body .card-title {
+    font-size: 20px;
+  }
+  
+  main .conteiner .a2 .card .card-body .card-text {
+    font-size: 16px;
+  }
+}
+
+#titulo{
+  text-align: center;
+  color: red;
+  font-size: 40px;
+  font-family: 'Arial Black', sans-serif;
+  text-shadow: 5px 3px 5px yellow;
+}
+
+.nav-top{
+    background-color: rgba(255, 0, 0, 0.726);
+}
+#logo{
+    margin-left: 20px;
+}
+
+.barra_busqueda{
+    margin-left: 20px;
+    margin-right: auto;
+    width: 40%;
+}
+.iconos{
+    display: flex;
+    gap: 30px;
+    margin-left: 10px;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+}
+.iconos .btn:hover{
+    background-color: yellow;
+    border-radius: 10px;
+    transition: 0.3s;
+    color: black;
+}
+#navbarNav{
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    background-color: rgb(109, 255, 47);
+    border-radius: 10px;
+    padding: 15px;
+}
+.navbar-nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.nav-link{
+  color: white;
+}
+.c-item
+{
+    height: 500px;
+}
+.c-img
+{
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(0.6);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* === SISTEMA RESPONSIVE PARA CARDS === */
+
+/* Contenedor principal de las cards */
+main .conteiner .a2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Cards base - siempre mantienen su tamaño completo */
+main .conteiner .a2 .card {
+  width: 100%;
+  margin: 0;
+  transition: transform 0.3s ease;
+}
+
+main .conteiner .a2 .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* === BREAKPOINTS RESPONSIVE === */
+
+/* Pantallas grandes: 4 cards por fila */
+@media screen and (min-width: 1200px) {
+  main .conteiner .a2 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Pantallas medianas: 3 cards por fila */
+@media screen and (max-width: 1199px) and (min-width: 900px) {
+  main .conteiner .a2 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Tablets: 2 cards por fila */
+@media screen and (max-width: 899px) and (min-width: 600px) {
+  main .conteiner .a2 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  
+  main .conteiner .a2 .card .card-body .card-title {
+    font-size: 20px;
+  }
+  
+  main .conteiner .a2 .card .card-body .card-text {
+    font-size: 16px;
+  }
+}
+
+/* Móviles grandes: 1 card por fila */
+@media screen and (max-width: 599px) {
+  main .conteiner .a2 {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 15px;
+  }
+  
+  main .conteiner .a2 .card {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  main .conteiner .a2 .card .card-body .card-title {
+    font-size: 24px;
+  }
+  
+  main .conteiner .a2 .card .card-body .card-text {
+    font-size: 18px;
+  }
+}
+
+/* Móviles pequeños: 1 card por fila optimizada */
+@media screen and (max-width: 400px) {
+  main .conteiner .a2 {
+    padding: 10px;
+    gap: 15px;
+  }
+  
+  main .conteiner .a2 .card {
+    max-width: 100%;
+  }
+  
+  main .conteiner .a2 .card .card-body .card-title {
+    font-size: 20px;
+  }
+  
+  main .conteiner .a2 .card .card-body .card-text {
+    font-size: 16px;
+  }
+}
+
+footer {
+    background: #316438;
+    color: white;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-section h4 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #ffd700;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #ffd700;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid #2c5530;
+    color: #ccc;
+}
+
+
+/* Efectos especiales para coronas */
+.card:nth-child(odd) {
+    transform: rotate(1deg);
+    transition: all 0.3s ease;
+}
+
+.card:nth-child(even) {
+    transform: rotate(-1deg);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: rotate(0deg) scale(1.05) translateY(-10px) !important;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3) !important;
+}
+
+/* Efectos de texto para precios especiales */
+.precio-especial {
+    animation: priceFlash 2s infinite;
+}
+
+@keyframes priceFlash {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.7; transform: scale(1.1); }
+}
+
+
+/* Efecto especial para títulos de secciones */
+.display-4, .display-5 {
+    text-shadow: 
+        2px 2px 0px #000,
+        -2px -2px 0px #fff,
+        2px -2px 0px #000,
+        -2px 2px 0px #fff;
+    animation: titleGlow 3s ease-in-out infinite alternate;
+}
+
+@keyframes titleGlow {
+    from { 
+        text-shadow: 
+            2px 2px 0px #000,
+            -2px -2px 0px #fff,
+            2px -2px 0px #000,
+            -2px 2px 0px #fff,
+            0 0 20px rgba(255, 215, 0, 0.5);
+    }
+    to { 
+        text-shadow: 
+            2px 2px 0px #000,
+            -2px -2px 0px #fff,
+            2px -2px 0px #000,
+            -2px 2px 0px #fff,
+            0 0 30px rgba(255, 215, 0, 0.8),
+            0 0 40px rgba(255, 215, 0, 0.4);
+    }
+}

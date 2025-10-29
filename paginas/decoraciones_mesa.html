@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Online Navideña</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/styles_navidad.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</head>
+<body>
+    <p id="titulo">Bienvenido a nuestra Tienda de Productos Navideños</p>
+    <header>
+      <div class="navbar nav-top">
+          <img src="../images/logo_tienda.png" alt="Logo" id="logo" width="120" height="120">
+          <form class="d-flex barra_busqueda" role="search">
+            <input class="form-control me-2" type="search" placeholder="Busca tu producto navideño" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+              </svg>
+            </button>
+          </form>
+          <span class="iconos">
+            <span>
+              <button type="button" class="btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+              </svg>
+              <p>Lista de deseos</p>
+              </button>
+            </span>
+            <span> 
+            <button type="button" class="btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+              <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+            </svg>
+            <p>Mi cuenta</p>
+            </button>
+            </span>
+            
+            <span>
+            <button type="button" class="btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-cart-dash" viewBox="0 0 16 16">
+              <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1z"/>
+              <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+            </svg>
+            <p>Mi Carrito</p>
+            </button>
+            </span>
+          </span>
+          <img src="../images/gorro_nav.webp" alt="" id="gorro" width="100" height="100">
+      </div>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="../index.html">INICIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../paginas/arbol.html">ARBOL</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../paginas/luces.html">LUCES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../paginas/figuras.html">FIGURAS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../paginas/decoraciones.html">DECORACIONES</a>
+            </li>
+            <!--
+              <li class="nav-item">
+              <a class="nav-link" href="../paginas/decoraciones_exterior.html">DECORACIONES EXTERIOR</a>
+            </li>-->
+            <li class="nav-item">
+              <a class="nav-link" href="../paginas/decoraciones_mesa.html">DECORACIONES MESA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../paginas/pesebre.html">PESEBRE</a>
+            </li>
+                
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  MAS
+              </a>
+              <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">⭐ Opciones</a></li>
+                  <li><a class="dropdown-item" href="#">🛷 Carrito</a></li>
+                  <li><a class="dropdown-item" href="#">⚙️ Configuracion</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+        <!-- 🍽️✨ SECCIÓN PRINCIPAL DE DECORACIONES DE MESA ✨🍽️ -->
+        <div class="container-fluid py-4">
+            <!-- 🎪 Sección de Centros de Mesa Premium -->
+            <section class="mb-5">
+                <h2 class="text-center mb-4 display-4 text-danger fw-bold">🍽️ Decoraciones Navideñas para Mesa</h2>
+                <div class="productos-grid">
+                    <div class="card h-100 shadow-sm">
+                        <img src="../images/mesa1.png" class="card-img-top" alt="Centro de Mesa 1" style="height: 250px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title text-primary">🌟 Centro de Mesa Elegante</h5>
+                            <p class="card-text flex-grow-1">Hermoso centro de mesa con un muñequito navideño, luces LED integradas y base dorada, perfecto para cenas navideñas elegantes</p>
+                            <div class="mt-auto">
+                                <p class="text-muted mb-2"><del>5571 Bs</del> <span class="badge bg-success">30% OFF</span></p>
+                                <button class="btn btn-primary btn-lg w-100">🌟 3900 Bs - ¡COMPRAR!</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card h-100 shadow-sm">
+                        <img src="../images/mesa2.png" class="card-img-top" alt="Centro de Mesa 2" style="height: 250px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title text-success">🌟 Centro de mesa bonito y clásico</h5>
+                            <p class="card-text flex-grow-1">Centro clasico para vivir una navidad bonita con la familia, incluye velas aromáticas de canela y pino, acabado en bronce envejecido</p>
+                            <div class="mt-auto">
+                                <p class="text-muted mb-2"><del>2750 Bs</del> <span class="badge bg-warning">20% OFF</span></p>
+                                <button class="btn btn-success btn-lg w-100">🕯️ 2200 Bs - ¡COMPRAR!</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card h-100 shadow-sm">
+                        <img src="../images/mesa3.png" class="card-img-top" alt="Centro de Mesa 3" style="height: 250px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title text-info">❄️ Paisaje Invernal</h5>
+                            <p class="card-text flex-grow-1">Centro de mesa con paisaje invernal, incluye casitas iluminadas, muñecos de nieve y copos de nieve artificiales que caen</p>
+                            <div class="mt-auto">
+                                <p class="text-muted mb-2"><del>2571 Bs</del> <span class="badge bg-success">30% OFF</span></p>
+                                <button class="btn btn-info btn-lg w-100">❄️ 1800 Bs - ¡COMPRAR!</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card h-100 shadow-sm">
+                        <img src="../images/mesa4.png" class="card-img-top" alt="Centro de Mesa 4" style="height: 250px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title text-danger">🌸 Centro Rosa Dorado</h5>
+                            <p class="card-text flex-grow-1">Exclusivo centro de mesa en tonos rosa y dorado, con flores preservadas, bolas navideñas de cristal y luces cálidas</p>
+                            <div class="mt-auto">
+                                <p class="text-muted mb-2"><del>5000 Bs</del> <span class="badge bg-danger">50% OFF</span></p>
+                                <button class="btn btn-danger btn-lg w-100">🌸 2500 Bs - ¡OFERTA!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 🍽️ Sección de Vajilla y Manteles -->
+            <section class="mb-5">
+                <h2 class="text-center mb-4 display-5 text-warning fw-bold">🍽️ Vajilla y Manteles Navideños</h2>
+                <div class="productos-grid">
+                    <div class="card h-100 shadow-sm bg-gradient-table">
+                        <div class="card-body text-center">
+                            <div class="display-1 mb-3">🍽️</div>
+                            <h5 class="card-title">Juego de Platos Navideños</h5>
+                            <p class="card-text">Set completo para 8 personas con diseños navideños</p>
+                            <button class="btn btn-outline-primary">🍽️ Ver Colección</button>
+                        </div>
+                    </div>
+
+                    <div class="card h-100 shadow-sm bg-gradient-table">
+                        <div class="card-body text-center">
+                            <div class="display-1 mb-3">🥂</div>
+                            <h5 class="card-title">Cristalería Elegante</h5>
+                            <p class="card-text">Copas y vasos con grabados navideños dorados</p>
+                            <button class="btn btn-outline-success">🥂 Ver Colección</button>
+                        </div>
+                    </div>
+
+                    <div class="card h-100 shadow-sm bg-gradient-table">
+                        <div class="card-body text-center">
+                            <div class="display-1 mb-3">🎀</div>
+                            <h5 class="card-title">Manteles Premium</h5>
+                            <p class="card-text">Manteles bordados con hilos dorados y plateados</p>
+                            <button class="btn btn-outline-info">🎀 Ver Colección</button>
+                        </div>
+                    </div>
+
+                    <div class="card h-100 shadow-sm bg-gradient-table">
+                        <div class="card-body text-center">
+                            <div class="display-1 mb-3">🍴</div>
+                            <h5 class="card-title">Cubiertos Especiales</h5>
+                            <p class="card-text">Cubiertos con mangos decorados navideños</p>
+                            <button class="btn btn-outline-warning">🍴 Ver Colección</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 🎁 Sección de Figuras Decorativas con Descuentos Especiales -->
+            <section class="mb-5">
+                <h2 class="text-center mb-4 display-5 text-info fw-bold">🎁 Figuras Decorativas - Descuentos Nunca Antes Vistos</h2>
+                <div class="productos-grid">
+                    <div class="card h-100 shadow-sm border-special">
+                        <img src="../images/fig_sale0.png" class="card-img-top" alt="Figura en Oferta 1" style="height: 200px; object-fit: cover;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-warning">🎅 Santa Claus Clásico</h5>
+                            <p class="card-text">Figura coleccionable de Santa Claus de porcelana</p>
+                            <div class="precio-especial mb-2">
+                                <span class="badge bg-danger fs-6">¡MEGA OFERTA!</span>
+                            </div>
+                            <button class="btn btn-warning">🎅 ¡Aprovecha Ahora!</button>
+                        </div>
+                    </div>
+
+                    <div class="card h-100 shadow-sm border-special">
+                        <img src="../images/fig_sale1.png" class="card-img-top" alt="Figura en Oferta 2" style="height: 200px; object-fit: cover;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-success">⛄ Muñeco de Nieve</h5>
+                            <p class="card-text">Adorable muñeco de nieve con bufanda tejida</p>
+                            <div class="precio-especial mb-2">
+                                <span class="badge bg-success fs-6">¡SÚPER PRECIO!</span>
+                            </div>
+                            <button class="btn btn-success">⛄ ¡Compra Ya!</button>
+                        </div>
+                    </div>
+
+                    <div class="card h-100 shadow-sm border-special">
+                        <img src="../images/fig_sale2.png" class="card-img-top" alt="Figura en Oferta 3" style="height: 200px; object-fit: cover;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-primary">🦌 Reno Rudolph</h5>
+                            <p class="card-text">Reno con nariz roja que se ilumina realmente</p>
+                            <div class="precio-especial mb-2">
+                                <span class="badge bg-primary fs-6">¡PRECIO LOCO!</span>
+                            </div>
+                            <button class="btn btn-primary">🦌 ¡No Te Lo Pierdas!</button>
+                        </div>
+                    </div>
+
+                    <div class="card h-100 shadow-sm border-special">
+                        <img src="../images/fig_sale3.png" class="card-img-top" alt="Figura en Oferta 4" style="height: 200px; object-fit: cover;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-info">👼 Ángel de la Paz</h5>
+                            <p class="card-text">Hermoso ángel con alas que brillan en la oscuridad</p>
+                            <div class="precio-especial mb-2">
+                                <span class="badge bg-info fs-6">¡ÚLTIMAS UNIDADES!</span>
+                            </div>
+                            <button class="btn btn-info">👼 ¡Última Oportunidad!</button>
+                        </div>
+                    </div>
+
+                    <div class="card h-100 shadow-sm border-special">
+                        <img src="../images/fig_sale4.png" class="card-img-top" alt="Figura en Oferta 5" style="height: 200px; object-fit: cover;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-secondary">🎁 Duende Ayudante</h5>
+                            <p class="card-text">Duende con saco de regalos y sonrisa traviesa</p>
+                            <div class="precio-especial mb-2">
+                                <span class="badge bg-secondary fs-6">¡LIQUIDACIÓN!</span>
+                            </div>
+                            <button class="btn btn-secondary">🎁 ¡Llévalo Ya!</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+  </main>
+  <footer>
+          <div class="footer-content">
+              <div class="footer-section1">
+                <img src="../images/logo_tienda.png" alt="Logo" id="logo" width="120" height="120">
+                <h4><center>Navi_dev</center></h4>
+              </div>
+              <div class="footer-section">
+                  <h4>Categorías</h4>
+                  <ul>
+                      <li><a href="#decoraciones">Decoraciones de Árbol</a></li>
+                      <li><a href="#luces">Luces Navideñas</a></li>
+                      <li><a href="#figuras">Figuras Navideñas</a></li>
+                      <li><a href="#coronas">Coronas y Guirnaldas</a></li>
+                  </ul>
+              </div>
+              <div class="footer-section">
+                  <h4>Atención al Cliente</h4>
+                  <ul>
+                      <li>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                          Contactanos
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Contacta con nosotros</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <form action="" class="formulario" method="POST">
+                                    <input type="text" placeholder="Nombre" id="nombre" name="nombre" required value="">
+                                    <input type="email" placeholder="Correo" id="correo" name="correo" required value="" class="email">
+                                    <textarea name="mensaje" id="mensaje" placeholder="Mensaje:"></textarea>
+                                  <div class="derecha">
+                                    <input class="boton derecha" type="submit" value="Contactar" name="submmit">
+                                    <button type="button" class="btn btn-secondary axs" data-bs-dismiss="modal">Cerrar</button>
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li><a href="#envios">Información de Envíos</a></li>
+                      <li><a href="#devoluciones">Devoluciones</a></li>
+                      <li><a href="#faq">Preguntas Frecuentes</a></li>
+                  </ul>
+              </div>
+              <div class="footer-section">
+                  <h4>Síguenos</h4>
+                  <ul>
+                      <li>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                      </svg><a href="#">   Facebook</a>
+                      </li>
+                      <li>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                      </svg>
+                      <a href="#">   Instagram</a></li>
+                      <li>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                        <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                      </svg>
+                      <a href="#">   Twitter X</a></li>
+                      <li>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                        <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                      </svg>
+                      <a href="#">   YouTube</a></li>
+                  </ul>
+              </div>
+          </div>
+          <div class="footer-bottom">
+              <p>2025 Navidad Mágica. Todos los derechos reservados. | Política de Privacidad | Términos y Condiciones</p>
+          </div>
+  </footer>
+</body>
+</html>
+<style type="text/css">
+
+/* Grid responsivo para productos */
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem 0;
+}
+
+.btn {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    background-size: 200% 200%;
+}
+.btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-100%) skewX(-45deg);
+    transition: transform 0.8s ease;
+}
+.btn:hover::after {
+    transform: translateX(100%);
+}
+
+/* Breakpoints responsivos */
+@media (max-width: 1200px) {
+    .productos-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .productos-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+        padding: 0.5rem;
+    }
+    
+    .display-4 {
+        font-size: 1.8rem !important;
+    }
+    
+    .display-5 {
+        font-size: 1.5rem !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .productos-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .container-fluid {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+</style>
